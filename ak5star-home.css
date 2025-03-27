@@ -27,7 +27,7 @@ header {
 }
 
 .logo-img {
-    width: 150px;
+    width: 300px;
     height: auto;
     object-fit: contain;
 }
@@ -46,7 +46,7 @@ header {
     }
     
     .logo-img {
-        width: 100px;
+        width: 200px;
         height: auto;
     }
 }
