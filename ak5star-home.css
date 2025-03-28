@@ -49,6 +49,75 @@ header {
         width: 200px;
         height: auto;
     }
+
+    .construction-container h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .construction-container p {
+        font-size: 1.2rem;
+    }
+
+    .construction-animation {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 1.5rem;
+    }
+
+    .gear-1 {
+        width: 75px;
+        height: 75px;
+    }
+
+    .gear-2 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .gear-3 {
+        width: 45px;
+        height: 45px;
+    }
+
+    .main-content {
+        padding: 1rem;
+    }
+}
+
+/* Additional mobile breakpoint for very small screens */
+@media (max-width: 480px) {
+    .logo-img {
+        width: 150px;
+    }
+
+    .construction-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .construction-container p {
+        font-size: 1rem;
+    }
+
+    .construction-animation {
+        width: 120px;
+        height: 120px;
+    }
+
+    .gear-1 {
+        width: 60px;
+        height: 60px;
+    }
+
+    .gear-2 {
+        width: 40px;
+        height: 40px;
+    }
+
+    .gear-3 {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 .main-content {
