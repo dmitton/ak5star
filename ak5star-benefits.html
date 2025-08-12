@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ak5star-benefits.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Benefits - AK 5 Star Inspections</title>
+    <script src="ak5star-benefits.js" defer></script>
+</head>
+<body class="benefits-page">
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="ak5star-images/icononly_transparent_nobuffer.png" alt="5 Star Inspections Icon" class="logo-icon">
+                    <span class="logo-text">5 Star Inspections</span>
+                </a>
+            </div>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="ak5star-services.html" class="nav-link">Services</a>
+                <a href="ak5star-benefits.html" class="nav-link active">Benefits</a>
+            </nav>
+            
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="mobile-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="ak5star-services.html" class="nav-link">Services</a>
+                <a href="ak5star-benefits.html" class="nav-link active">Benefits</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Top Section - Heading -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Why choose us?</h1>
+            </div>
+        </section>
+
+        <!-- Benefits Grid Section -->
+        <section class="benefits-grid-section">
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="benefit-title">Energy Efficiency Insights</h3>
+                    <p class="benefit-description">An energy rating helps identify how energy-efficient your home is. It provides specific recommendations on how to improve energy usage, reduce waste, and lower energy bills.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="benefit-title">Cost Savings</h3>
+                    <p class="benefit-description">With an energy rating, you'll get recommendations for improvements like insulation, efficient lighting, or heating and cooling systems. Making these upgrades can lead to lower utility bills over time.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="benefit-title">Increase Home Value</h3>
+                    <p class="benefit-description">Homes with a high energy rating are more attractive to buyers because of the potential for lower ongoing energy costs. This can increase the resale value of your home.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="benefit-title">Environmental Impact</h3>
+                    <p class="benefit-description">An energy-efficient home reduces your carbon footprint by consuming less energy, which contributes to a greener environment.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="benefit-title">Compliance and Regulation</h3>
+                    <p class="benefit-description">In some regions, there may be regulations requiring energy assessments, especially when selling or renting a home. An energy rating ensures you comply with these rules.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <h3 class="benefit-title">Comfort</h3>
+                    <p class="benefit-description">Energy-efficient homes are typically more comfortable, with stable temperatures and better air quality, due to improvements like better insulation or efficient heating and cooling systems.</p>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: mspencer@ak5star.com</p>
+                <div class="social-links">
+                    <a href="https://instagram.com/ak5star" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com/ak5star" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="owner-image">
+                <img src="ak5star-images/owner.png" alt="Owner" class="owner-img">
+            </div>
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                <form action="https://formspree.io/f/xeogbebp" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
