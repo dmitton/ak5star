@@ -1,0 +1,612 @@
+/* CSS Variables */
+:root {
+    --gold: #000000;
+    --silver: #C0C0C0;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+/* Basic Body and Header Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background: var(--white);
+    color: var(--black);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sticky Header */
+.sticky-header {
+    background: var(--gold);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: none;
+    transform: translateY(0);
+}
+
+.sticky-header.scrolled {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.logo-icon {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+    transition: width 0.3s ease;
+}
+
+.logo-text {
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Georgia', serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: font-size 0.3s ease;
+}
+
+.sticky-header.scrolled .logo-icon {
+    width: 60px;
+}
+
+.sticky-header.scrolled .logo-text {
+    font-size: 1.8rem;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.mobile-menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: var(--white);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Georgia', serif;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background: rgba(255, 255, 255, 0.3);
+    font-weight: 600;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--gold);
+    flex-direction: column;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+.mobile-menu.active {
+    display: flex;
+}
+
+.mobile-menu .nav-link {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.mobile-menu .nav-link:last-child {
+    border-bottom: none;
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 120px;
+    flex: 1;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: var(--white);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-badge {
+    display: inline-block;
+    background: var(--black);
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+    color: var(--black);
+}
+
+/* Benefits Grid Section */
+.benefits-grid-section {
+    padding: 4rem 2rem;
+    background: var(--white);
+}
+
+.benefits-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.benefit-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.benefit-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--gold);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.benefit-icon i {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.benefit-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+    color: var(--black);
+}
+
+.benefit-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, var(--gold), var(--silver));
+    padding: 3rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem 4rem;
+    width: 100%;
+}
+
+.contact-info {
+    flex: 0 1 auto;
+    text-align: left;
+}
+
+.contact-info h3 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Georgia', serif;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+    color: var(--white);
+    font-family: 'Georgia', serif;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--gold);
+    transform: translateY(-2px);
+}
+
+.owner-image {
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 1rem;
+    margin-left: 4rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.owner-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    filter: contrast(1.1) brightness(1.05) saturate(1.1);
+    transition: filter 0.3s ease;
+}
+
+.owner-img:hover {
+    filter: contrast(1.15) brightness(1.08) saturate(1.15);
+}
+
+.contact-form {
+    flex: 0 1 auto;
+    text-align: left;
+    min-width: 400px;
+    margin-right: 3rem;
+}
+
+.contact-form h3 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Georgia', serif;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+    font-size: 1rem;
+    font-family: 'Georgia', serif;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.submit-button {
+    padding: 0.8rem 1.5rem;
+    background: var(--white);
+    color: var(--gold);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-family: 'Georgia', serif;
+}
+
+.submit-button:hover {
+    background: var(--gold);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .sticky-header {
+        padding: 1.2rem 1rem;
+    }
+
+    .logo {
+        padding-left: 1rem;
+    }
+
+    .logo-icon {
+        width: 50px;
+    }
+
+    .logo-text {
+        font-size: 1.5rem;
+    }
+
+    .sticky-header.scrolled .logo-icon {
+        width: 50px;
+    }
+
+    .sticky-header.scrolled .logo-text {
+        font-size: 1.5rem;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+
+
+    .main-content {
+        margin-top: 100px;
+        padding: 1rem 0;
+    }
+
+    .hero-section {
+        padding: 2rem 1rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .benefits-grid-section {
+        padding: 2rem 1rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .benefit-card {
+        padding: 1.5rem;
+    }
+
+
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 1rem 2rem;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .owner-image {
+        margin: 1rem auto;
+        justify-content: center;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 500px;
+        margin-right: 0;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px; /* Prevents zoom on mobile */
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .owner-img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sticky-header {
+        padding: 1rem 0.8rem;
+    }
+
+    .logo-icon {
+        width: 40px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .sticky-header.scrolled .logo-icon {
+        width: 40px;
+    }
+
+    .sticky-header.scrolled .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+
+
+    .main-content {
+        margin-top: 80px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .benefit-card {
+        padding: 1rem;
+    }
+
+    .benefit-title {
+        font-size: 1.3rem;
+    }
+
+    .benefit-description {
+        font-size: 0.95rem;
+    }
+
+
+
+    footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer-content {
+        padding: 0 0.5rem;
+    }
+    
+    .owner-img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .contact-form {
+        max-width: 100%;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.3rem;
+    }
+    
+    .contact-info p {
+        font-size: 1rem;
+    }
+}
