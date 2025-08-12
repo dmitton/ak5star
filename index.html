@@ -3,26 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AK 5 Star Inspections</title>
     <link rel="stylesheet" href="ak5star-home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>AK 5 Star Inspections</title>
+    <script src="ak5star-home.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="ak5star-images/fulllogo_transparent_nobuffer.png" alt="5 Star Inspections Logo" class="logo-img">
+    <!-- Hero Section with Main Image -->
+    <section class="hero">
+        <div class="hero-image">
+            <img src="ak5star-images/mountain2.jpg" alt="Mountain Landscape" class="hero-img">
+            <div class="hero-text">
+                <h1 class="hero-title">5 Star Inspections</h1>
+                <p class="hero-subtitle">A Better Home Starts Today</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sticky Header -->
+    <header class="sticky-header">
+        <div class="header-content">
+            <div class="logo">
+                <img src="ak5star-images/icononly_transparent_nobuffer.png" alt="5 Star Inspections Icon" class="logo-icon">
+                <span class="logo-text">5 Star Inspections</span>
+            </div>
+            <nav class="header-nav">
+                <a href="ak5star-services.html" class="nav-link">Services</a>
+                <a href="ak5star-benefits.html" class="nav-link">Benefits</a>
+            </nav>
+            
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="mobile-menu">
+                <a href="ak5star-services.html" class="nav-link">Services</a>
+                <a href="ak5star-benefits.html" class="nav-link">Benefits</a>
+            </nav>
         </div>
     </header>
 
     <main class="main-content">
-        <div class="construction-container">
-            <div class="construction-animation">
-                <div class="gear gear-1"></div>
-                <div class="gear gear-2"></div>
-                <div class="gear gear-3"></div>
+        <div class="content-container">
+            <h1 class="main-heading">The Alaska Touch</h1>
+            <p class="main-description">Make your home a more comfortable and energy efficient place to live with the help of an Alaskan professional with over 30 years experience in building construction and inspection.</p>
+            <div class="button-container">
+                <a href="ak5star-services.html" class="action-button secondary">Services</a>
+                <a href="ak5star-benefits.html" class="action-button primary">Benefits</a>
             </div>
-            <h2>Under Construction</h2>
-            <p>Coming Soon</p>
         </div>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Phone: (555) 123-4567</p>
+                <p>Email: mspencer@ak5star.com</p>
+                <div class="social-links">
+                    <a href="https://instagram.com/ak5star" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com/ak5star" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="owner-image">
+                <img src="ak5star-images/owner.png" alt="Owner" class="owner-img">
+            </div>
+            <div class="contact-form">
+                <h3>Send us a Message</h3>
+                <form action="https://formspree.io/f/xeogbebp" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 </html>
