@@ -1,0 +1,101 @@
+HomeID,YearBuilt,SquareFeet,HeatingType,InsulationLevel,WindowType,AirSealing,Occupants,ClimateZone,HomeType,PredictedEnergyCost,EnergyRating
+1,1984,1650,Oil,Medium,Double,Average,3,Subarctic,Single-Family,2950,54
+2,1996,2100,Natural Gas,High,Triple,Tight,4,Subarctic,Single-Family,2100,72
+3,1978,1250,Electric,Low,Single,Poor,2,Subarctic,Single-Family,3400,42
+4,2004,1850,Oil,Medium,Double,Average,3,Subarctic,Single-Family,2600,63
+5,2012,2300,Heat Pump,High,Triple,Tight,5,Arctic,Single-Family,1800,78
+6,1990,1450,Natural Gas,Medium,Double,Average,2,Subarctic,Single-Family,2450,59
+7,1988,1600,Electric,Low,Single,Poor,3,Arctic,Single-Family,3550,40
+8,2008,2000,Natural Gas,High,Triple,Tight,4,Subarctic,Single-Family,2050,75
+9,1975,1200,Oil,Low,Single,Poor,2,Subarctic,Single-Family,3600,38
+10,1982,1550,Electric,Medium,Double,Average,2,Arctic,Single-Family,2900,55
+11,1998,1750,Natural Gas,High,Triple,Tight,4,Subarctic,Single-Family,2200,70
+12,2006,1900,Heat Pump,High,Triple,Tight,3,Arctic,Single-Family,1950,77
+13,1980,1400,Oil,Low,Single,Poor,2,Subarctic,Single-Family,3450,41
+14,1993,1650,Electric,Medium,Double,Average,3,Subarctic,Single-Family,2750,56
+15,2015,2500,Heat Pump,High,Triple,Tight,4,Arctic,Single-Family,1700,82
+16,1972,1100,Oil,Low,Single,Poor,2,Subarctic,Single-Family,3800,36
+17,2001,1850,Natural Gas,Medium,Double,Average,3,Arctic,Single-Family,2400,64
+18,1995,1700,Electric,Low,Single,Poor,2,Subarctic,Single-Family,3300,45
+19,1986,1600,Oil,Medium,Double,Average,3,Arctic,Single-Family,2950,52
+20,2010,2200,Heat Pump,High,Triple,Tight,4,Subarctic,Single-Family,1850,80
+21,1991,1500,Natural Gas,Medium,Double,Average,2,Arctic,Single-Family,2550,60
+22,1985,1300,Electric,Low,Single,Poor,2,Subarctic,Single-Family,3500,43
+23,1997,1750,Oil,Medium,Double,Average,3,Arctic,Single-Family,2650,57
+24,2003,1950,Heat Pump,High,Triple,Tight,4,Subarctic,Single-Family,1900,76
+25,2011,2250,Natural Gas,High,Triple,Tight,4,Arctic,Single-Family,2000,79
+26,1983,1550,Electric,Medium,Double,Average,3,Subarctic,Single-Family,2800,55
+27,1989,1600,Oil,Low,Single,Poor,2,Arctic,Single-Family,3400,44
+28,1994,1700,Natural Gas,Medium,Double,Average,3,Subarctic,Single-Family,2500,61
+29,1977,1250,Electric,Low,Single,Poor,2,Arctic,Single-Family,3600,39
+30,2007,2100,Heat Pump,High,Triple,Tight,4,Subarctic,Single-Family,1800,81
+31,1981,1450,Oil,Medium,Double,Average,3,Arctic,Single-Family,3000,53
+32,1999,1800,Natural Gas,High,Triple,Tight,4,Subarctic,Single-Family,2150,69
+33,2013,2350,Heat Pump,High,Triple,Tight,5,Arctic,Single-Family,1750,83
+34,1976,1200,Electric,Low,Single,Poor,2,Subarctic,Single-Family,3650,37
+35,1987,1550,Oil,Low,Single,Poor,3,Arctic,Single-Family,3350,46
+36,2005,1900,Natural Gas,Medium,Double,Average,3,Subarctic,Single-Family,2450,65
+37,1992,1650,Electric,Medium,Double,Average,3,Arctic,Single-Family,2700,58
+38,1984,1500,Oil,Low,Single,Poor,2,Subarctic,Single-Family,3500,47
+39,2014,2400,Heat Pump,High,Triple,Tight,5,Arctic,Single-Family,1650,84
+40,1990,1700,Natural Gas,High,Triple,Tight,4,Subarctic,Single-Family,2250,68
+41,1978,1300,Electric,Low,Single,Poor,2,Subarctic,Condo,3000,46
+42,2002,1850,Natural Gas,Medium,Double,Average,3,Subarctic,Condo,2400,63
+43,1996,1600,Electric,Low,Single,Poor,2,Arctic,Condo,3100,48
+44,2016,2200,Heat Pump,High,Triple,Tight,4,Subarctic,Condo,1750,82
+45,1974,1150,Oil,Low,Single,Poor,2,Arctic,Condo,3550,40
+46,1988,1500,Natural Gas,Medium,Double,Average,3,Subarctic,Condo,2600,59
+47,1993,1650,Electric,Medium,Double,Average,3,Arctic,Condo,2750,56
+48,2009,1950,Heat Pump,High,Triple,Tight,4,Subarctic,Condo,1850,78
+49,1991,1450,Oil,Low,Single,Poor,2,Arctic,Condo,3250,49
+50,1985,1550,Natural Gas,Medium,Double,Average,3,Subarctic,Condo,2550,61
+51,2011,2300,Heat Pump,High,Triple,Tight,5,Arctic,Duplex,1700,85
+52,1997,1750,Electric,Low,Single,Poor,3,Subarctic,Duplex,3100,50
+53,1989,1600,Natural Gas,Medium,Double,Average,3,Arctic,Duplex,2600,62
+54,1975,1300,Oil,Low,Single,Poor,2,Subarctic,Duplex,3450,42
+55,2004,2000,Heat Pump,High,Triple,Tight,4,Arctic,Duplex,1800,80
+56,1999,1700,Electric,Medium,Double,Average,3,Subarctic,Duplex,2700,57
+57,1983,1500,Natural Gas,Low,Single,Poor,2,Arctic,Duplex,3000,52
+58,1995,1800,Oil,Medium,Double,Average,3,Subarctic,Duplex,2800,58
+59,1978,1350,Electric,Low,Single,Poor,2,Arctic,Duplex,3500,44
+60,2006,1950,Heat Pump,High,Triple,Tight,4,Subarctic,Duplex,1900,77
+61,2012,2400,Natural Gas,High,Triple,Tight,5,Arctic,Townhome,1950,82
+62,1994,1600,Electric,Low,Single,Poor,3,Subarctic,Townhome,3150,49
+63,1980,1450,Oil,Low,Single,Poor,2,Arctic,Townhome,3300,45
+64,2008,2050,Heat Pump,High,Triple,Tight,4,Subarctic,Townhome,1850,79
+65,1991,1700,Natural Gas,Medium,Double,Average,3,Arctic,Townhome,2550,63
+66,1986,1550,Electric,Low,Single,Poor,2,Subarctic,Townhome,3200,48
+67,2014,2250,Heat Pump,High,Triple,Tight,4,Arctic,Townhome,1750,84
+68,1977,1300,Oil,Low,Single,Poor,2,Subarctic,Townhome,3450,41
+69,1999,1750,Natural Gas,Medium,Double,Average,3,Arctic,Townhome,2500,66
+70,2003,1900,Electric,Medium,Double,Average,3,Subarctic,Townhome,2700,57
+71,1982,1500,Oil,Low,Single,Poor,2,Subarctic,Cabin,3800,33
+72,1990,1600,Electric,Medium,Double,Average,2,Arctic,Cabin,2950,54
+73,2005,1850,Natural Gas,High,Triple,Tight,3,Subarctic,Cabin,2200,72
+74,1987,1400,Oil,Low,Single,Poor,2,Arctic,Cabin,3500,42
+75,1996,1700,Electric,Medium,Double,Average,3,Subarctic,Cabin,2750,55
+76,2013,2100,Heat Pump,High,Triple,Tight,4,Arctic,Cabin,1800,81
+77,1974,1200,Oil,Low,Single,Poor,2,Subarctic,Cabin,3650,37
+78,1993,1600,Natural Gas,Medium,Double,Average,3,Arctic,Cabin,2450,63
+79,1985,1350,Electric,Low,Single,Poor,2,Subarctic,Cabin,3300,48
+80,2007,2000,Heat Pump,High,Triple,Tight,4,Arctic,Cabin,1850,79
+81,1988,1500,Natural Gas,Medium,Double,Average,3,Subarctic,Mobile Home,2650,58
+82,1979,1300,Electric,Low,Single,Poor,2,Arctic,Mobile Home,3400,44
+83,1995,1650,Oil,Medium,Double,Average,3,Subarctic,Mobile Home,2900,53
+84,2002,1800,Heat Pump,High,Triple,Tight,4,Arctic,Mobile Home,2000,76
+85,1992,1550,Natural Gas,Medium,Double,Average,2,Subarctic,Mobile Home,2550,62
+86,1981,1400,Electric,Low,Single,Poor,2,Arctic,Mobile Home,3300,47
+87,2011,2200,Heat Pump,High,Triple,Tight,4,Subarctic,Mobile Home,1850,79
+88,1978,1300,Oil,Low,Single,Poor,2,Arctic,Mobile Home,3450,40
+89,1997,1700,Electric,Medium,Double,Average,3,Subarctic,Mobile Home,2800,56
+90,2004,1950,Natural Gas,High,Triple,Tight,4,Arctic,Mobile Home,2100,70
+91,1986,1500,Oil,Medium,Double,Average,3,Subarctic,Multi-Family,3000,52
+92,1998,1750,Electric,Low,Single,Poor,2,Arctic,Multi-Family,3150,46
+93,2006,1900,Natural Gas,High,Triple,Tight,4,Subarctic,Multi-Family,2250,68
+94,2015,2300,Heat Pump,High,Triple,Tight,4,Arctic,Multi-Family,1700,84
+95,1975,1250,Oil,Low,Single,Poor,2,Subarctic,Multi-Family,3550,39
+96,1994,1650,Electric,Medium,Double,Average,3,Arctic,Multi-Family,2750,55
+97,1989,1550,Natural Gas,Medium,Double,Average,2,Subarctic,Multi-Family,2600,61
+98,2008,2000,Heat Pump,High,Triple,Tight,5,Arctic,Multi-Family,1900,78
+99,1991,1450,Electric,Low,Single,Poor,2,Subarctic,Multi-Family,3200,47
+100,2012,2250,Heat Pump,High,Triple,Tight,4,Arctic,Multi-Family,1800,82
