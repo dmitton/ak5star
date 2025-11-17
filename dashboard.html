@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="ak5star-images/icononly_transparent_nobuffer.png">
+    <link rel="stylesheet" href="ak5star-benefits.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Energy Insights Dashboard - AK 5 Star Inspections</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+    <script src="ak5star-benefits.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Header for the website -->
+    <header class="sticky-header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="ak5star-images/icononly_transparent_nobuffer.png" alt="5 Star Inspections Icon" class="logo-icon">
+                    <span class="logo-text">5 Star Inspections</span>
+                </a>
+            </div>
+            <nav class="header-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="ak5star-services.html" class="nav-link">Services</a>
+                <a href="ak5star-benefits.html" class="nav-link">Benefits</a>
+                <a href="dashboard.html" class="nav-link active">Insights</a>
+            </nav>
+            
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="mobile-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="ak5star-services.html" class="nav-link">Services</a>
+                <a href="ak5star-benefits.html" class="nav-link">Benefits</a>
+                <a href="dashboard.html" class="nav-link active">Insights</a>
+            </nav>
+        </div>
+    </header>
+
+<!-- Main content of the dashboard page -->
+<div class="header">
+    <h1>Energy Insights Dashboard</h1>
+    <p>Analyze, Predict, and Visualize Home Energy Efficiency</p>
+</div>
+
+<!-- Upload a CSV File section -->
+<section class="card">
+    <h2>Upload a CSV File</h2>
+    <input type="file" id="fileInput" accept=".csv">
+
+    <div id="errorBox" class="error hidden"></div>
+
+    <p class="note">Your CSV can have ANY column names — you will map them below.</p>
+
+    <div id="columnMappingSection" class="hidden">
+        <h3>Match Your Columns</h3>
+        <div class="mapper-container">
+            <label>Square Feet</label>
+            <select id="colSqft"></select>
+
+            <label>Year Built</label>
+            <select id="colYear"></select>
+
+            <label>Insulation Level</label>
+            <select id="colIns"></select>
+
+            <label>Energy Rating</label>
+            <select id="colRating"></select>
+        </div>
+
+        <button id="applyMapping">Apply Mapping</button>
+    </div>
+
+    <!-- Preview Uploaded Data section -->
+    <div id="previewContainer" class="hidden">
+        <h3>Preview Uploaded Data</h3>
+    
+        <div class="preview-wrapper">
+            <table id="previewTable"></table>
+        </div>
+    </div>
+    
+</section>
+
+<!-- Descriptive Statistics section -->
+<section class="card">
+    <h2>Descriptive Statistics</h2>
+    <div id="stats"></div>
+</section>
+
+<!-- Visualizations section -->
+<section class="card">
+    <h2>Visualizations</h2>
+
+    <canvas id="barChart"></canvas>
+    <canvas id="scatterChart"></canvas>
+    <canvas id="lineChart"></canvas>
+</section>
+
+<!-- Predict Energy Rating section -->
+<section class="card">
+    <h2>Predict Energy Rating</h2>
+
+    <div class="predict-grid">
+        <label>Square Feet:</label>
+        <input id="sqftInput" type="number" placeholder="1600">
+
+        <label>Year Built:</label>
+        <input id="yearInput" type="number" placeholder="1995">
+
+        <label>Insulation Level:</label>
+        <select id="insInput">
+            <option>Low</option>
+            <option>Medium</option>
+            <option>High</option>
+        </select>
+    </div>
+
+    <button onclick="makePrediction()" class="predict-btn">Predict</button>
+
+    <h3 id="predictionOutput"></h3>
+    <p id="accuracyOutput"></p>
+</section>
+
+<script src="dashboard.js"></script>
+</body>
+</html>
